@@ -35,7 +35,7 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002074744533'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002074744533'))  
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002159575204'))  
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002074744533')) 
-auth_grp = environ.get('AUTH_GROUP')
+auth_grp = environ.get('-1002992603243')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002791473001') 
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
@@ -55,7 +55,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Film_CityOfficial')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Arpitbotmovies')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/Film_CityOfficial')
 
-AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1003047944891 -1002992603243 -1002187860971") # add multiple channels here, separated by single space
+AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1003047944891 -1002187860971") # add multiple channels here, separated by single space
 AUTH_CHANNEL = [int(ch) for ch in AUTH_CHANNEL.strip().split()] if AUTH_CHANNEL else []
 AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1003047944891') # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = [int(ch) for ch in AUTH_REQ_CHANNEL.strip().split()] if AUTH_REQ_CHANNEL else []
